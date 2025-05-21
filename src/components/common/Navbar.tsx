@@ -41,7 +41,7 @@ const Navbar = () => {
             {/* iPad & Desktop Navbar */}
             <section className="flex w-full justify-between items-center m-auto p-2">
                 <Link href="/" className="uppercase text-3xl font-bold tracking-widest relative font-convergence">
-                    AJ<span className="text-blue-700 font-bold text-8xl absolute -bottom-2">.</span>{" "}
+                    AK<span className="text-blue-700 font-bold text-8xl absolute -bottom-2">.</span>{" "}
                 </Link>
                 <div className="hidden lg:flex gap-5 min-w-96 justify-center items-center backdrop-blur-lg p-2">
                     {navbarItems.map((item) => {
