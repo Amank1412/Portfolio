@@ -45,7 +45,7 @@ export default function Footer() {
           </TooltipProvider>
         </div>
         <p className="text-sm text-muted-foreground text-center md:text-right md:mr-[-150px]">
-          Made with ❤️ by Aditya
+          Made with ❤️ by Aman
         </p>
       </div>
     </footer>
