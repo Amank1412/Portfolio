@@ -127,7 +127,7 @@ const Home = () => {
               variants={fadeInUp}
               className="text-4xl flex gap-12 items-center flex-row md:text-7xl lg:text-8xl font-bold"
             >
-              Aditya
+              Aman
             </MotionDiv>
 
             <MotionDiv variants={fadeInUp}>
@@ -139,7 +139,7 @@ const Home = () => {
               className="opacity-80 text-sm lg:text-xl font-medium"
             >
               <span className="text-blue-500 font-bold">
-                Contributor @ SSoC'24, GSSoC'24 & Hacktoberfest
+                Contributor @ GSSoC'24
               </span>
             </MotionDiv>
 
