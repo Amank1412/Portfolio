@@ -85,7 +85,7 @@ const ContactMe: React.FC = () => {
         transition={{ delay: 0.5, duration: 1 }}
       >
         <motion.a
-          href="mailto:2005akjha@gmail.com"
+          href="mailto:amankumarr7390@gmail.com"
           className="flex flex-col items-center p-4 bg-transparent dark:bg-transparent dark:text-white rounded-lg border border-black dark:border-white shadow-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition transform hover:scale-105 hover:rotate-3"
 
           whileHover={{ scale: 1.1, rotate: 5 }}
@@ -95,7 +95,7 @@ const ContactMe: React.FC = () => {
         </motion.a>
 
         <motion.a
-          href="https://x.com/adxtya_jha"
+          href="https://x.com/Amank1412"
           className="flex flex-col items-center p-4 bg-transparent dark:bg-transparent dark:text-white rounded-lg border border-black dark:border-white shadow-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition transform hover:scale-105 hover:rotate-3"
 
           whileHover={{ scale: 1.1, rotate: -5 }}
@@ -105,7 +105,7 @@ const ContactMe: React.FC = () => {
         </motion.a>
 
         <motion.a
-          href="https://github.com/adityajha2005"
+          href="https://github.com/Amank1412"
           className="flex flex-col items-center p-4 bg-transparent dark:bg-transparent dark:text-white dar rounded-lg border border-black dark:border-white shadow-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition transform hover:scale-105 hover:rotate-3"
 
           whileHover={{ scale: 1.1, rotate: 5 }}
@@ -115,7 +115,7 @@ const ContactMe: React.FC = () => {
         </motion.a>
 
         <motion.a
-          href="https://www.linkedin.com/in/aditya-jha-654800280/"
+          href="https://https://www.linkedin.com/in/Amank1412/"
           className="flex flex-col items-center p-4 bg-transparent dark:bg-transparent dark:text-white rounded-lg border border-black dark:border-white shadow-sm hover:bg-gray-200 dark:hover:bg-gray-600 transition transform hover:scale-105 hover:rotate-3"
 
           whileHover={{ scale: 1.1, rotate: -5 }}
@@ -141,7 +141,7 @@ const ContactMe: React.FC = () => {
         <div className="mb-4">
           <p className="text-green-500">$ git add . "{formData.message}"</p>
           <p className="text-green-500">$ git commit -m "{formData.email}"</p>
-          <p className="text-green-500">$ git push origin adityajha2005</p>
+          <p className="text-green-500">$ git push origin Amank1412</p>
         </div>
         
         <input
