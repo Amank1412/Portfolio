@@ -7,22 +7,22 @@ export function DockDemo() {
   return (
     <Dock className="mt-4 -ml-2">
       <DockIcon>
-        <a href="mailto:2005akjha@gmail.com" target="_blank">
+        <a href="mailto:amankumarr7390@gmail.com" target="_blank">
           <Icons.Gmail className="h-8 w-8" />
         </a>
       </DockIcon>
       <DockIcon>
-        <a href="https://github.com/adityajha2005" target="_blank">
+        <a href="https://github.com/Amank1412" target="_blank">
           <Icons.gitHub className="h-8 w-8" />
         </a>
       </DockIcon>
       <DockIcon>
-        <a href="https://www.linkedin.com/in/aditya-jha-654800280/" target="_blank">
+        <a href="https://www.linkedin.com/in/Amank1412/" target="_blank">
           <Icons.linkedin className="h-8 w-8" />
         </a>
       </DockIcon>
       <DockIcon>
-        <a href="https://x.com/adxtya_jha" target="_blank">
+        <a href="https://x.com/Amank1412" target="_blank">
           <Icons.twitte className="h-8 w-8" />
         </a>
       </DockIcon>

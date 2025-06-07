@@ -24,7 +24,7 @@ const ContactMe: React.FC = () => {
   const processCommand = () => {
     const addRegex = /^git add \. "(.*)"$/;
     const commitRegex = /^git commit -m "(.*)"$/;
-    const pushRegex = /^git push origin adityajha2005$/;
+    const pushRegex = /^git push origin Amank1412$/;
 
     if (addRegex.test(command)) {
       const message = addRegex.exec(command)?.[1] || '';
