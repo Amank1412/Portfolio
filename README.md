@@ -9,3 +9,11 @@ A sleek, responsive portfolio built with *Next.js 15, **TypeScript, and **Tailwi
 - Custom icons using Lucide React
 - SEO-friendly & high performance
 
+## 🛠 Tech Stack
+- *Next.js 15 (App Router)*
+- *TypeScript*
+- *Tailwind CSS v4*
+- *Lucide React, React Icons*
+- *Framer Motion*
+- *Deployed on Vercel*
+
