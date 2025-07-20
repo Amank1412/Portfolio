@@ -17,3 +17,10 @@ A sleek, responsive portfolio built with *Next.js 15, **TypeScript, and **Tailwi
 - *Framer Motion*
 - *Deployed on Vercel*
 
+## ⚙ Getting Started
+
+```bash
+git clone https://github.com/Amank1412/Portfolio.git
+cd Portfolio
+npm install
+npm run dev
