@@ -1,10 +1,8 @@
 "use client";
-import React, { useEffect, useRef } from "react";
-
-const CURSOR_DOT_SIZE = 8;
+import React from "react";
 
 export const CustomCursor: React.FC = () => {
   return null;
 };
 
-export default CustomCursor; 
+export default CustomCursor;
