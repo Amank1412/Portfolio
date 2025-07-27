@@ -24,7 +24,7 @@ const projects: Project[] = [
     title: "XCODE",
     description:
       "A modern and stylish developer-focused landing page built using React, Tailwind CSS, and Spline for 3D elements",
-    imageUrl: "/xcode2.jpg",
+    imageUrl: "/email.jpg",
     Image: "",
     tags: ["React", "Tailwind CSS", "JavaScript"],
     link: "https://xcode-navy.vercel.app/",
@@ -37,7 +37,7 @@ const projects: Project[] = [
     title: "Nexora",
     description:
       "Nexora is a modern, responsive web application built with React, Vite, and Tailwind CSS. It aims to deliver a clean UI, fast performance.",
-    imageUrl: "/nex.jpg",
+    imageUrl: "/nexora2.jpg",
     Image: "",
     tags: ["React", "Tailwind CSS", "JavaScript"],
     link: "https://nexora-yz8g.vercel.app/",
@@ -52,7 +52,7 @@ const projects: Project[] = [
     title: "NEXT_U",
     description:
       "Next_U is a gamified self-growth app that turns real-life habits into an RPG adventure with levels, achievements, and leaderboards",
-    imageUrl: "/next.jpg",
+    imageUrl: "/nextup3.jpg",
     Image: "",
    tags: ["React", "Node.js", "Express.js", "MongoDB", ],
 

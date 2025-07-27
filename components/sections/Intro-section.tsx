@@ -20,21 +20,27 @@ export function IntroSection() {
             </span>
           </h1>
 
-          <p className="text-xl sm:text-2xl font-medium text-[#737373] dark:text-[#A1A1AA] max-w-2xl">
+          {/* First paragraph color updated */}
+          <p className="text-xl sm:text-2xl font-medium text-black dark:text-white max-w-2xl">
             A Full Stack Developer passionate about crafting seamless digital
             experiences
           </p>
 
-          <p className="text-sm sm:text-base font-normal text-[#737373] dark:text-[#A1A1AA] max-w-2xl">
-            I specialize in building web apps with{" "}
-            <span className="text-[#08090a] dark:text-slate-100 font-semibold">
-               React, JavaScript, Tailwind CSS, Node.js and more.
-            </span>{" "}
-            Always excited to tackle new challenges where I can create value and
-            grow as a coder. Let&apos;s connect if you&apos;ve got a project
-            that could use my skills!
-          </p>
+          {/* Second paragraph color updated */}
+         <p className="text-sm sm:text-base font-normal text-[#737373] dark:text-[#A1A1AA] max-w-2xl">
+  I specialize in building web apps with{" "}
+  <span className="text-[#08090a] dark:text-slate-100 font-semibold">
+    React, JavaScript, Tailwind CSS, Node.js and more.
+  </span>{" "}
+  Always excited to tackle new challenges where I can create value and
+  grow as a coder. Let&apos;s connect if you&apos;ve got a project
+  that could use my skills!
+</p>
+
+
+
         </article>
+
         <div className="mt-4">
           <a
             href=""
@@ -43,8 +49,21 @@ export function IntroSection() {
             className="inline-flex items-center gap-2 px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-md shadow transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
           >
             Resume
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" className="inline-block">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4m-8 8h8" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="inline-block"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 4v12m0 0l-4-4m4 4l4-4m-8 8h8"
+              />
             </svg>
           </a>
         </div>

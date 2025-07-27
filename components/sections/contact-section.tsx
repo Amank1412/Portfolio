@@ -4,11 +4,16 @@ import { Mail, MessageSquare } from "lucide-react";
 import HeadingBadge from "@/components/heading-badge";
 import { SpotlightCard } from "@/components/ui/spotlight-card";
 import { FaGithub, FaLinkedin, FaXTwitter, FaMedium } from "react-icons/fa6";
-import { ModeToggle } from "@/components/mode-toggle";
 import React from "react";
 
 // Reusable icon wrapper
-function SocialIcon({ href, children }: { href: string; children: React.ReactNode }) {
+function SocialIcon({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
   return (
     <a
       href={href}
@@ -25,7 +30,6 @@ function SocialIcon({ href, children }: { href: string; children: React.ReactNod
 export function ContactSection() {
   return (
     <section id="contact" className="w-full py-10 flex flex-col items-start gap-y-10">
-
       {/* Header */}
       <div className="space-y-5">
         <HeadingBadge title="Contact" icon={<MessageSquare size={14} color="#EF4444" />} />
@@ -63,10 +67,18 @@ export function ContactSection() {
           </a>
 
           <div className="flex items-center justify-center gap-4 pt-4">
-            <SocialIcon href="https://x.com/Amank1412"><FaXTwitter className="w-5 h-5" /></SocialIcon>
-            <SocialIcon href="https://github.com/Amank1412"><FaGithub className="w-5 h-5" /></SocialIcon>
-            <SocialIcon href="https://www.linkedin.com/in/Amank1412"><FaLinkedin className="w-5 h-5" /></SocialIcon>
-            <SocialIcon href="https://medium.com/@Amank1412"><FaMedium className="w-5 h-5" /></SocialIcon>
+            <SocialIcon href="https://x.com/Amank1412">
+              <FaXTwitter className="w-5 h-5" />
+            </SocialIcon>
+            <SocialIcon href="https://github.com/Amank1412">
+              <FaGithub className="w-5 h-5" />
+            </SocialIcon>
+            <SocialIcon href="https://www.linkedin.com/in/Amank1412">
+              <FaLinkedin className="w-5 h-5" />
+            </SocialIcon>
+            <SocialIcon href="https://medium.com/@Amank1412">
+              <FaMedium className="w-5 h-5" />
+            </SocialIcon>
           </div>
 
           <p className="inline-block px-4 py-2 text-sm text-[#737373] dark:text-[#A1A1AA] bg-gray-50 dark:bg-[#141414] rounded-sm">
@@ -75,7 +87,7 @@ export function ContactSection() {
         </div>
       </SpotlightCard>
 
-      {/* Footer: Mode Toggle centered above credit */}
+      {/* Footer */}
       <div className="w-full flex flex-col items-center gap-4 mt-8">
         <span className="text-center text-sm text-[#737373] dark:text-[#A1A1AA]">
           Made with <span className="text-red-500">❤️</span> by Aman

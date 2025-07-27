@@ -9,7 +9,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { useTheme } from "next-themes";
 
 type Project = {
   id: string;
@@ -36,7 +35,6 @@ const isValidUrl = (url?: string): boolean => {
 };
 
 export function ProjectCard({ project }: ProjectCardProps) {
-  const { theme } = useTheme();
   const isXcode = project.title.toLowerCase() === "xcode";
   return (
     <SpotlightCard
@@ -61,11 +59,13 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <h3 className="text-black dark:text-white text-xl font-semibold">
             {project.title}
           </h3>
-          <p className={
-            isXcode
-              ? "text-[#737373] dark:text-[#A1A1AA] text-sm font-normal line-clamp-4"
-              : "text-[#737373] dark:text-[#A1A1AA] text-sm font-normal line-clamp-4"
-          }>
+          <p
+            className={
+              isXcode
+                ? "text-[#737373] dark:text-[#A1A1AA] text-sm font-normal line-clamp-4"
+                : "text-[#737373] dark:text-[#A1A1AA] text-sm font-normal line-clamp-4"
+            }
+          >
             {project.description}
           </p>
           <div className="flex flex-wrap gap-2 pt-2">
