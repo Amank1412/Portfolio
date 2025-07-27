@@ -35,7 +35,7 @@ export function AboutSection() {
               <span className="h-1 w-1 rounded-full bg-gray-900 dark:bg-emerald-500"></span>
               Who I Am
             </h4>
-            <p className="text-sm text-[#737373] dark:text-[#A1A1AA] leading-relaxed">
+            <p className="text-sm text-black dark:text-white leading-relaxed">
               I&apos;m a passionate full-stack developer with a keen eye for
               design and a love for creating seamless user experiences. With
               over 2+ years of experience in full-stack development, I&apos;ve

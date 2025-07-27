@@ -47,7 +47,7 @@
 
 :root {
   --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --foreground: #18181b; /* dark text for light mode */
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -79,11 +79,12 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --cursor-color: #000;
 }
 
 .dark {
   --background: #o0a0a0a;
-  --foreground: oklch(0.985 0 0);
+  --foreground: #fff; /* white text for dark mode */
   --card: oklch(0.145 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.145 0 0);
@@ -114,6 +115,7 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(0.269 0 0);
   --sidebar-ring: oklch(0.439 0 0);
+  --cursor-color: #fff;
 }
 
 @layer base {
@@ -123,6 +125,8 @@
 
   body {
     @apply bg-white dark:bg-[#0a0a0a] text-foreground;
+    cursor: auto !important;
+    color: var(--foreground) !important;
   }
 }
 
@@ -219,4 +223,8 @@ body {
 
 .animate-toggle {
   animation: toggle 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-cursor-dot, .custom-cursor-ring {
+  display: none !important;
 }

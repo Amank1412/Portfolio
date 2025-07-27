@@ -6,6 +6,7 @@ import React, { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { Menu, X } from "lucide-react";
 import MobileNav from "./mobile-nav";
+import { ModeToggle } from "@/components/mode-toggle";
 
 interface NavbarProps {
   developerInitial?: string;
@@ -177,18 +178,7 @@ export function Navbar({
         </div>
 
         <div className="flex-shrink-0 relative">
-          <Link
-            href="#"
-            className="flex items-center justify-center w-9 h-9 rounded-full bg-[#08090a] dark:bg-slate-100 text-white dark:text-black font-semibold relative overflow-hidden group"
-          >
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
-              <div
-                className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
-                style={{ animation: "var(--animate-shine)" }}
-              />
-            </div>
-            {developerInitial}
-          </Link>
+          <ModeToggle />
         </div>
 
         <div className="flex items-center space-x-1 w-full justify-end">

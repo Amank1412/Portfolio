@@ -77,7 +77,6 @@ export function ContactSection() {
 
       {/* Footer: Mode Toggle centered above credit */}
       <div className="w-full flex flex-col items-center gap-4 mt-8">
-        <ModeToggle />
         <span className="text-center text-sm text-[#737373] dark:text-[#A1A1AA]">
           Made with <span className="text-red-500">❤️</span> by Aman
         </span>

@@ -19,26 +19,22 @@ export const ModeToggle = () => {
   }
 
   return (
-    <div className="">
+    <div>
       <button
         type="button"
         className={cn(
-          "relative flex items-center justify-center w-10 h-10 rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-ring/50 bg-transparent hover:bg-gray-100 dark:hover:bg-[#191a1a] group"
+          "relative flex items-center justify-center w-10 h-10 bg-transparent"
         )}
         aria-label="Toggle theme"
         title={`${theme === "dark" ? "light" : "dark"} mode`}
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       >
-        <span className="absolute inset-0 flex items-center justify-center transition-opacity duration-500 group-hover:scale-110">
-          <MoonIcon
-            className={cn(
-              "size-[1.5rem] transition-all duration-500 transform",
-              theme === "dark"
-                ? "text-white rotate-0 scale-100 animate-toggle"
-                : "text-gray-700 rotate-0 scale-100 animate-toggle"
-            )}
-          />
-        </span>
+        <MoonIcon
+          className={cn(
+            "size-[1.5rem]",
+            theme === "dark" ? "text-white" : "text-gray-700"
+          )}
+        />
       </button>
     </div>
   );

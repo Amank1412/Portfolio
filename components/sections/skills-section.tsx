@@ -14,6 +14,7 @@ import {
 import { RiTailwindCssFill } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
 import { Lightbulb } from "lucide-react";
+import { useTheme } from "next-themes";
 
 type Skill = {
   name: string;

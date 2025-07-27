@@ -9,6 +9,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { useTheme } from "next-themes";
 
 type Project = {
   id: string;
@@ -35,6 +36,8 @@ const isValidUrl = (url?: string): boolean => {
 };
 
 export function ProjectCard({ project }: ProjectCardProps) {
+  const { theme } = useTheme();
+  const isXcode = project.title.toLowerCase() === "xcode";
   return (
     <SpotlightCard
       gradientColor="rgba(34, 197, 94, 0.10)"
@@ -53,31 +56,23 @@ export function ProjectCard({ project }: ProjectCardProps) {
               className="object-cover p-1 rounded-sm"
             />
           )}
-          {project.videoUrl && (
-            <video
-              src={project.videoUrl}
-              autoPlay
-              muted
-              loop
-              preload="metadata"
-              playsInline
-              className="absolute top-0 left-0 w-full h-full object-cover p-1 rounded-sm"
-            />
-          )}
         </div>
-
         <div className="w-full sm:w-[60%] flex flex-col p-5 space-y-3">
-          <h3 className="text-xl font-semibold text-[#737373] dark:text-slate-200/70 group-hover:text-[#08090a]/90 dark:group-hover:text-slate-200 duration-300 ease-in-out transition-colors">
+          <h3 className="text-black dark:text-white text-xl font-semibold">
             {project.title}
           </h3>
-          <p className="text-[#737373] dark:text-[#A1A1AA] text-sm font-normal line-clamp-4">
+          <p className={
+            isXcode
+              ? "text-[#737373] dark:text-[#A1A1AA] text-sm font-normal line-clamp-4"
+              : "text-[#737373] dark:text-[#A1A1AA] text-sm font-normal line-clamp-4"
+          }>
             {project.description}
           </p>
           <div className="flex flex-wrap gap-2 pt-2">
             {project.tags.map((tag) => (
               <span
                 key={tag}
-                className="px-2 py-1 text-xs rounded-sm font-medium bg-white dark:bg-[#0a0a0a] border border-gray-200/80 dark:border-gray-500/10 text-[#737373] dark:text-[#A1A1AA] group-hover:border-gray-900/30 dark:group-hover:border-gray-500/20 transition-all duration-300"
+                className="px-2 py-1 text-xs rounded-sm font-medium bg-white dark:bg-[#0a0a0a] border border-gray-200/80 dark:border-gray-500/10 text-black dark:text-white"
               >
                 {tag}
               </span>
