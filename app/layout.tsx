@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@/components/analytics";
 import { CustomCursor } from "@/components/ui/CustomCursor";
+import { Navbar } from "@/components/navbar"; // 👈 yeh import ensure karo
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -80,7 +81,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          {/* 👇 yahan se developerInitial hata diya */}
+          <Navbar />
+          <main className="min-h-screen w-full max-w-[700px] mx-auto px-5">
+            {children}
+          </main>
           <Analytics />
           <CustomCursor />
         </ThemeProvider>
